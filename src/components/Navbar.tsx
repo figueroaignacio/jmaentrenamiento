@@ -25,11 +25,9 @@ export function Navbar() {
           <Menu />
         </button>
       </div>
+      <Wordmark />
       <nav className="hidden md:flex items-center">
         <ul className="flex items-center">
-          <li className="mr-6">
-            <Wordmark />
-          </li>
           {navigation.map((navItem, index) => (
             <li key={index} className="mr-6">
               <a href={navItem.href}>{navItem.title}</a>
@@ -56,9 +54,6 @@ export function Navbar() {
           </button>
         </div>
         <ul className="flex flex-col items-start p-8">
-          <li>
-            <Wordmark />
-          </li>
           {navigation.map((navItem, index) => (
             <li key={index} className="my-4" onClick={toggleMenu}>
               <a href={navItem.href}>{navItem.title}</a>
