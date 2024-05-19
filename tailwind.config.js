@@ -2,15 +2,20 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    backgroundColor: {
-      background: "var(--background)",
+    container: {
+      center: true,
     },
-    colors: {
-      foreground: "var(--foreground)",
-      primary: "var(--primary)",
-    },
-    borderColor: {
-      border: "var(--border)",
+    extend: {
+      backgroundColor: {
+        background: "var(--background)",
+      },
+      colors: {
+        foreground: "var(--foreground)",
+        primary: "var(--primary)",
+      },
+      borderColor: {
+        border: "var(--border)",
+      },
     },
   },
   plugins: [],
