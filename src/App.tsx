@@ -1,5 +1,12 @@
+// Components
+import { Navbar } from "./components/Navbar";
+
 function App() {
-  return <main>JMA Entrenamiento</main>;
+  return (
+    <main>
+      <Navbar />
+    </main>
+  );
 }
 
 export default App;
