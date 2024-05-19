@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: hsl(0, 0%, 97%);
+    --foreground: hsl(0, 0%, 15%);
+    --primary: hsl(0, 75%, 34%);
+    --border: hsla(0, 0%, 0%, 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
